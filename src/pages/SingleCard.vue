@@ -1,16 +1,17 @@
 <template lang="">
-    <div class="col-3 mx-4 my-5">
-        <div class="card" style="width: 18rem;">
+    <div class="col-3 mx-3 my-4">
+        <div class="card">
             <img :src="project.proj_image" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{ project.title }}</h5>
                 <p class="card-text">{{ project.description }}</p>
-                <router-link :to="linkRoute" class="btn btn-primary">
+                <router-link :to="linkRoute" class="btn btn-primary" v-if="linkRoute">
                     {{ linkLabel }}
                 </router-link>
             </div>
         </div>
     </div>
+
 </template>
 <script>
 export default {

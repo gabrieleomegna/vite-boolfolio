@@ -23,7 +23,7 @@ export default {
                     routeName: 'home'
                 },
                 {
-                    label: 'Project',
+                    label: 'Projects',
                     routeName: 'projects.index'
                 },
             ]
