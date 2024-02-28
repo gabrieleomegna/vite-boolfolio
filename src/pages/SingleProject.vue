@@ -1,14 +1,13 @@
-<template lang="">
+<template>
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <SingleCard :project = "project"/>
-            </div>
+        <div class="row justify-content-center">
+            <SingleCard :project = "project"/>
         </div> 
     </div>
 </template>
 <script>
 import SingleCard from './SingleCard.vue';
+import axios from 'axios';
 export default {
     name: 'SingleProject',
     components: {
@@ -39,6 +38,6 @@ export default {
     },
 }
 </script>
-<style lang="">
+<style lang="scss" scoped>
     
 </style>
